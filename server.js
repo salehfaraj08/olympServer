@@ -62,4 +62,4 @@ mongoose.connect('mongodb+srv://saleh:saleh0811@cluster0.whijz.mongodb.net/myFir
     console.log('connected to db');
 });
 
-app.listen(5001, () => console.log(`Listening on port 5001`));
+app.listen(process.env.PORT || 5001, () => console.log(`Listening on port 5001`));
